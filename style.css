@@ -1,0 +1,67 @@
+/* removing any margin so page layout can fill screen */
+body {
+    margin: 0;
+}
+
+/* filling screen with image pattern */
+.page-layout {
+    height: 100vh;
+    width: 100vw;
+    background: url("img/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The errors shown in this div */
+#error-box {
+    display: none;
+    color: white;
+    padding: 7px;
+    background: #ff6761;
+    border-radius: 5px;
+}
+
+/* it contained two form that stacked horizontally */
+.main-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* the form contains name input, radio buttons and two buttons */
+.left-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+/* The second form which contains the results */
+.right-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* style for items which shows results */
+.result-placeholder {
+    margin: 5px;
+}
+
+/* the save box title */
+.saved-ans-title {
+    margin: 0 0 20px;
+}
+
+/* if there's a saved result for name it's children elements show saved result */
+#saved-ans-container {
+    display: none;
+    border-style: dashed;
+    padding-bottom: 5px;
+}
+
+/* using this so all button size be the same */
+.btn {
+    width: 80px;
+}

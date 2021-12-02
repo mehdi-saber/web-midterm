@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web midterm</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="page-layout">
+    <div class="main-container">
+        <form action="" class="left-form">
+            <div id="error-box">
+            </div>
+            <h1>Mr. or Ms.?</h1>
+
+            <div>
+                <label for="name-input">Name:</label>
+                <input type="text" name="first-name" id="name-input">
+            </div>
+
+            <div>
+                <input type="radio" name="gender" id="male-gender" value="Male">
+                <label for="male-gender">Male</label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" id="female-gender" value="Female">
+                <label for="female-gender">Female</label>
+            </div>
+
+            <div>
+                <button class="btn" type="button" onclick="checkGender()">submit</button>
+            </div>
+            <div>
+                <button class="btn" type="button" onclick="saveGender()">save</button>
+            </div>
+        </form>
+        <form action="" class="right-form">
+            <h1>Prediction</h1>
+            <p id="gender-placeholder" class="result-placeholder"></p>
+            <p id="accuracy-placeholder" class="result-placeholder"></p>
+            <div id="saved-ans-container">
+                <h1 class="saved-ans-title">Saved<br>Answer</h1>
+                <p id="save-gender-placeholder" class="result-placeholder">Male</p>
+                <input type="hidden" id="saved-ans-name">
+                <button class="btn" type="button" onclick="clearSavedGender()">clear</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
